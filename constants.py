@@ -1,3 +1,4 @@
+
 patch = "8.11"
 godsDict = {
     "Achilles": 0,
@@ -32,7 +33,7 @@ godsDict = {
     "Chernobog": 0,
     "Chiron": 0,
     "Chronos": 0,
-    # "Cliodhna": 0,
+    "Cliodhna": 0,
     "Cthulhu": 0,
     "Cu Chulainn": 0,
     "Cupid": 0,
@@ -122,21 +123,23 @@ godsDict = {
 
 Assassins = ["Arachne", "Awilix", "Bakasura", "Bastet", "Camazotz", "Da Ji", "Fenrir", "Hun Batz", "Kali", "Loki", "Mercury", "Ne Zha", "Nemesis", "Pele", "Ratatoskr", "Ravana", "Serqet", "Set", "Susano", "Thanatos", "Thor"]
 Guardians = ["Ares", "Artio", "Athena", "Bacchus", "Cabrakan", "Cerberus",  "Fafnir", "Ganesha", "Geb", "Jormungandr", "Khepri", "Kumbhakarna", "Kuzenbo", "Sobek", "Sylvanus", "Terra", "Xing Tian", "Yemoja", "Ymir"]
-Hunters = ["Ah Muzen Cab", "Anhur", "Apollo", "Artemis", "Cernunnos", "Charybdis","Chernobog", "Chiron", "Cupid", "Hachiman", "Heimdallr", "Hou Yi", "Izanami", "Jing Wei", "Medusa", "Neith", "Rama", "Skadi", "Ullr", "Xbalanque"]
+Hunters = ["Ah Muzen Cab", "Anhur", "Apollo", "Artemis", "Cernunnos", "Chernobog", "Chiron", "Cupid", "Hachiman", "Heimdallr", "Hou Yi", " Izanami", "Jing Wei", "Medusa", "Neith", "Rama", "Skadi", "Ullr", "Xbalanque"]
 Mages = ["Agni", "Ah Puch", "Anubis", "Ao Kuang", "Aphrodite", "Baba Yaga", "Baron Samedi", "Chang\'e", "Chronos", "Discordia", "Eset", "Freya", "Hades", "He Bo", "Hel", "Hera", "Janus", "Kukulkan", "Merlin", "Morgan Le Fay",
          "Nox", "Nu Wa", "Olorun", "Persephone", "Poseidon", "Ra", "Raijin", "Scylla", "Sol", "The Morrigan", "Thoth", "Tiamat", "Vulcan", "Zeus", "Zhong Kui"]
-Warriors = ["Amaterasu", "Achilles", "Bellona", "Chaac", "Cu Chulainn", "Erlang Shen", "Gilgamesh", "Guan Yu", "Hercules", "Horus", "King Arthur", "Mulan", "Nike", "Odin", "Osiris", "Sun Wukong", "Tyr", "Vamana"]
+Warriors = ["Amaterasu", "Achilles", "Bellona", "Chaac", "Cu Chulainn", "Erlang Shen", "Gilgamesh", "Guan Yu", "Herculues", "Horus", "King Arthur", "Mulan", "Nike", "Odin", "Osiris", "Sun Wukong", "Tyr", "Vamana"]
 
 
 roles = ["Carry", "Support", "Mid", "Jungle", "Solo"]
-ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster"]
-# ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster", "All Ranks"]
+ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster", "All Ranks"]
 slots = ["slot1", "slot2", "slot3", "slot4", "slot5", "slot6"]
+
+single_combat_stats = ["kills", "deaths", "assists", "damage_player", "damage_taken", "damage_mitigated", "healing", "healing_self"]
+single_objective_stats = ["gold", "damage_bot", "kills_bot", "camps_cleared", "tower_kills", "phoenix_kills", "tower_damage", "objective_assists", "wards_placed"]
 
 Tier_Three_items = [
 "Ninja Tabi", "Shoes of Focus", "Relic Dagger", "Shield of Regrowth", "Lotus Crown", "Heartward Amulet",
 "Sovereignty", "Jade Emperor\'s Crown", "Atalanta\'s Bow", "Shogun\'s Kusari", "Ancile", "Breastplate of Valor", "Divine Ruin",
-"Poisoned Star", "The Sledge", "Mystical Mail", " Charon\'s Coin", "Runeforged Hammer", "Ichaival", "Dominance", "Spirit Robe",
+"Poisoned Star", "The Sledge", "Mystical Mail", "Charon\'s Coin", "Runeforged Hammer", "Ichaival", "Dominance", "Spirit Robe",
 "Obsidian Shard", "Berserker\'s Shield", "Rod Asclepius", "Void Shield", "Chronos\' Pendant", "Telkhines Ring", "Typhon\'s Fang",
 "Deathbringer", "Reinforced Greaves", "Talaria Boots", "Winged Blade", "Bristlebush Acorn", "Thickbark Acorn", "Odysseus\' Bow",
 "Spectral Armor", "Magi\'s Cloak", "Blackthorn Hammer", "Silverbranch Bow", "Pestilence", "Bulwark of Hope", "Frostbound Hammer",
@@ -149,12 +152,13 @@ Tier_Three_items = [
 "Shoes of the Magi", "Warrior Tabi", "Golden Blade", "Evergreen Acorn", "Witchblade", "Soul Eater", "Hydra\'s Lament", "Talisman of Energy",
 "Hide of the Nemean Lion", "Toxic Blade", "Void Stone", "Devourer\'s Gauntlet", "Midgardian Mail", "Soul Gem", "Jotunn\'s Wrath", "Stone of Fal",
 "Pridwen", "Hide of the Urchin", "Caduceus Shield", "Rangda\'s Mask", "Asi", "Arondight", "Ring of Hecate", "Tyrannical Plate Helm", "Soul Reaver",
-"Qin\'s Sais", "Staff of Myrddin", "Mantle of Discord"
+"Qin\'s Sais", "Staff of Myrddin", "Mantle of Discord", "Evolved Gauntlet of Thebes", "Evolved Transcendence", "Evolved Devourer\'s Gauntlet",
+"Evolved Book of Thoth", "Evolved Charon\'s Coin", "Evolved Hide of the Urchin", "Evolved Rage", "Evolved Soul Eater", "Evolved Warlock\'s Staff"
 ]
 
 Starter_items = [
 "Animosity", "Archmage\'s Gem", "Benevolence", "Blood-soaked Shroud", "Bluestone Brooch", "Bluestone Pendant", "Bumba\'s Dagger",
-"Bumba\'s Hammer", "Bumba\'s Spear", "Compassion", "Conduit Gem", "Corrupted Bluestone", "Death\'s Embrace", "Death\'s Temper",
+"Bumba\'s Hammer", "Bumba\'s Spear", "Compassion", "Conduit Gem", "Corrupted Bluestone", "Death\'s Embrace", "Death\'s Temper", 
 "Death\'s Toll", "Diamond Arrow", "Eye of the Jungle", "Gem of Focus", "Gilded Arrow", "Hero\'s Axe", "Hunter\'s Cowl", "Infused Sigil",
 "Leader\'s Cowl", "Leather Cowl", "Manikin Hidden Blade", "Manikin Mace", "Manikin Scepter", "Ornate Arrow", "Pendulum of Ages",
 "Protector of the Jungle", "Sacrifical Shroud", "Sands of Time", "Seer of the Jungle", "Sentinel\'s Boon", "Sentinel\'s Embrace",
