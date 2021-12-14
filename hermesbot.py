@@ -365,5 +365,5 @@ if __name__ == "__main__":
                                             data[path]["wins"] / games * 100, 2)), inline=True)
                 await message.channel.send(embed=embed)
 
-
+#hi
     client.run(token)
