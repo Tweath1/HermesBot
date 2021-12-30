@@ -1,5 +1,4 @@
-
-patch = "8.11"
+patch = "8.12"
 godsDict = {
     "Achilles": 0,
     "Agni": 0,
@@ -16,6 +15,7 @@ godsDict = {
     "Artemis": 0,
     "Artio": 0,
     "Athena": 0,
+    "Atlas": 0,
     "Awilix": 0,
     "Baba Yaga": 0,
     "Bacchus": 0,
@@ -121,16 +121,17 @@ godsDict = {
 }
 
 
-Assassins = ["Arachne", "Awilix", "Bakasura", "Bastet", "Camazotz", "Da Ji", "Fenrir", "Hun Batz", "Kali", "Loki", "Mercury", "Ne Zha", "Nemesis", "Pele", "Ratatoskr", "Ravana", "Serqet", "Set", "Susano", "Thanatos", "Thor"]
-Guardians = ["Ares", "Artio", "Athena", "Bacchus", "Cabrakan", "Cerberus",  "Fafnir", "Ganesha", "Geb", "Jormungandr", "Khepri", "Kumbhakarna", "Kuzenbo", "Sobek", "Sylvanus", "Terra", "Xing Tian", "Yemoja", "Ymir"]
-Hunters = ["Ah Muzen Cab", "Anhur", "Apollo", "Artemis", "Cernunnos", "Chernobog", "Chiron", "Cupid", "Hachiman", "Heimdallr", "Hou Yi", " Izanami", "Jing Wei", "Medusa", "Neith", "Rama", "Skadi", "Ullr", "Xbalanque"]
+Assassins = ["Arachne", "Awilix", "Bakasura", "Bastet", "Camazotz", "Da Ji", "Fenrir", "Hun Batz", "Kali", "Loki", "Mercury", "Ne Zha", "Nemesis", "Pele", "Ratatoskr", "Ravana", "Serqet", "Set", "Susano", "Thanatos", "Thor", "Tsukuyomi"]
+Guardians = ["Ares", "Artio", "Athena", "Atlas", "Bacchus", "Cabrakan", "Cerberus", "Cthulhu", "Fafnir", "Ganesha", "Geb", "Jormungandr", "Khepri", "Kumbhakarna", "Kuzenbo", "Sobek", "Sylvanus", "Terra", "Xing Tian", "Yemoja", "Ymir"]
+Hunters = ["Ah Muzen Cab", "Anhur", "Apollo", "Artemis", "Cernunnos", "Charybdis","Chernobog", "Chiron", "Cupid", "Danzaburou", "Hachiman", "Heimdallr", "Hou Yi", "Izanami", "Jing Wei", "Medusa", "Neith", "Rama", "Skadi", "Ullr", "Xbalanque"]
 Mages = ["Agni", "Ah Puch", "Anubis", "Ao Kuang", "Aphrodite", "Baba Yaga", "Baron Samedi", "Chang\'e", "Chronos", "Discordia", "Eset", "Freya", "Hades", "He Bo", "Hel", "Hera", "Janus", "Kukulkan", "Merlin", "Morgan Le Fay",
          "Nox", "Nu Wa", "Olorun", "Persephone", "Poseidon", "Ra", "Raijin", "Scylla", "Sol", "The Morrigan", "Thoth", "Tiamat", "Vulcan", "Zeus", "Zhong Kui"]
-Warriors = ["Amaterasu", "Achilles", "Bellona", "Chaac", "Cu Chulainn", "Erlang Shen", "Gilgamesh", "Guan Yu", "Herculues", "Horus", "King Arthur", "Mulan", "Nike", "Odin", "Osiris", "Sun Wukong", "Tyr", "Vamana"]
+Warriors = ["Amaterasu", "Achilles", "Bellona", "Chaac", "Cu Chulainn", "Erlang Shen", "Gilgamesh", "Guan Yu", "Hercules", "Horus", "King Arthur", "Mulan", "Nike", "Odin", "Osiris", "Sun Wukong", "Tyr", "Vamana"]
 
 
 roles = ["Carry", "Support", "Mid", "Jungle", "Solo"]
-ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster", "All Ranks"]
+ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster"]
+# ranks = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Masters", "Grandmaster", "All Ranks"]
 slots = ["slot1", "slot2", "slot3", "slot4", "slot5", "slot6"]
 
 single_combat_stats = ["kills", "deaths", "assists", "damage_player", "damage_taken", "damage_mitigated", "healing", "healing_self"]

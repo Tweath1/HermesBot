@@ -51,8 +51,8 @@ def godAbbreviations(godName):
         godName = "Charybdis"
     elif godName == "chern" or godName == "cherno":
         godName = "Chernobog"
-    elif godName == "lulu":
-        godName = "Cthulu"
+    elif godName == "lulu" or godName == "cthu":
+        godName = "Cthulhu"
     elif godName == "cu" or godName == "cu chu" or godName == "cu chulainn" or godName == "chu chu":
         godName = "Cu-Chulainn"
     elif godName == "daji" or godName == "da ji":
@@ -158,6 +158,7 @@ def godAbbreviations(godName):
     return godName.title()
 
 def get_role(god):
+    print(god)
     if god.lower() in (assassin.lower() for assassin in Assassins):
         role = "Jungle"
     elif god.lower() in (guardian.lower() for guardian in Guardians):
@@ -211,7 +212,11 @@ if __name__ == "__main__":
                         god = " ".join(god)
                         actgod = godAbbreviations(god.title()).replace("-", " ")
 
-                data = anlz.get_top_builds(dbClient, actgod, role.capitalize(), patch)
+                if actgod == "Atlas":
+                    data = anlz.get_top_builds(dbClient, actgod, role.capitalize(), patch, "Casual")
+                else :
+                    data = anlz.get_top_builds(dbClient, actgod, role.capitalize(), patch)
+                    
                 ItemWR = []
                 iconURL = anlz.get_url(actgod)
                 if actgod.lower() in (assassin.lower() for assassin in Assassins):
@@ -258,7 +263,11 @@ if __name__ == "__main__":
                         god = " ".join(god)
                         actgod = godAbbreviations(god.title()).replace("-", " ")
 
-                data = anlz.get_worst_matchups(mongo_client, actgod, role.capitalize(), patch)
+                if actgod == "Atlas":
+                    data = anlz.get_worst_matchups(dbClient, actgod, role.capitalize(), patch, "Casual")
+                else :
+                    data = anlz.get_worst_matchups(dbClient, actgod, role.capitalize(), patch)
+
                 iconURL = anlz.get_url(actgod)
                 if actgod.lower() in (assassin.lower() for assassin in Assassins):
                     color = "fce703"
@@ -299,7 +308,11 @@ if __name__ == "__main__":
                         god = " ".join(god)
                         actgod = godAbbreviations(god.title()).replace("-", " ")
                 
-                data = anlz.get_worst_matchups(mongo_client, actgod, role.capitalize(), patch)
+                if actgod == "Atlas":
+                    data = anlz.get_worst_matchups(dbClient, actgod, role.capitalize(), patch, "Casual")
+                else :
+                    data = anlz.get_worst_matchups(dbClient, actgod, role.capitalize(), patch)
+                    
                 iconURL = anlz.get_url(actgod)
                 if actgod.lower() in (assassin.lower() for assassin in Assassins):
                     color = "fce703"
@@ -340,7 +353,11 @@ if __name__ == "__main__":
                         god = " ".join(god)
                         actgod = godAbbreviations(god.title()).replace("-", " ")
 
-                data = anlz.get_build_path(dbClient, actgod, role.capitalize(), patch)
+                if actgod == "Atlas":
+                    data = anlz.get_build_path(dbClient, actgod, role.capitalize(), patch, "Casual")
+                else :
+                    data = anlz.get_build_path(dbClient, actgod, role.capitalize(), patch)
+
                 iconURL = anlz.get_url(actgod)
                 if actgod.lower() in (assassin.lower() for assassin in Assassins):
                     color = "fce703"
